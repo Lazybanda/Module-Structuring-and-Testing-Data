@@ -16,3 +16,7 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+// 1- we will have a pop up window with the string "Hello world" you can close this one by clicking okay
+
+// 2- when we call the variable containing our promp function we get a pop up with an input we fill out this one with our name and press okay. the variable will have our name after that...

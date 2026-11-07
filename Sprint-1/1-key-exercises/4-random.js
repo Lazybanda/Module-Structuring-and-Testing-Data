@@ -7,3 +7,8 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // Try breaking down the expression and using documentation to explain what it means
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
+
+//response:
+// num represents a random between 1(minimum) and 100(maximum). The expression Math.random() generates a random number between 0 (inclusive) and 1 (exclusive). By multiplying this value by (maximum - minimum + 1), we scale the range to be between 0 and 100. Then, we add the minimum value to shift the range to be between the min/max, and finely math floor just rouds up our result to get a clean integer.
+
+console.log(num);

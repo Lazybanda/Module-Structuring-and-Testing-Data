@@ -14,3 +14,8 @@ Answer the following questions:
 
 What does `console` store?
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
+
+- this the result that we get after entring console.loge: ƒ log() { [native code] }.
+
+- if we only run console we get a list of function, so this one stores a list of function and the type is an object.
+- the dot is used to navigate our object to select a key/value or to go back to our example the object name is console "." the we want to access log or assert
