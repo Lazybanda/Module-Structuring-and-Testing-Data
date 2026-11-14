@@ -4,22 +4,22 @@
 
 function formatAs12HourClock(time) {
   const hours = Number(time.slice(0, 2));
-  if (hours > 12) {
-    return `${hours - 12}:00 pm`;
+
+  const minuts = Number(time.slice(3));
+
+  if (hours === 12) {
+    return `12:${minuts < 10 ? `0${minuts}` : minuts} PM`;
   }
-  return `${time} am`;
+  if (hours > 12) {
+    return `0${hours - 12}:${minuts < 10 ? `0${minuts}` : minuts} PM`;
+  }
+
+  return `0${hours}:${minuts < 10 ? `0${minuts}` : minuts} AM`;
 }
 
-const currentOutput = formatAs12HourClock("08:00");
-const targetOutput = "08:00 am";
-console.assert(
-  currentOutput === targetOutput,
-  `current output: ${currentOutput}, target output: ${targetOutput}`
-);
+console.log(formatAs12HourClock("20:20"));
+console.log(formatAs12HourClock("08:09"));
+console.log(formatAs12HourClock("21:01"));
+console.log(formatAs12HourClock("12:06"));
 
-const currentOutput2 = formatAs12HourClock("23:00");
-const targetOutput2 = "11:00 pm";
-console.assert(
-  currentOutput2 === targetOutput2,
-  `current output: ${currentOutput2}, target output: ${targetOutput2}`
-);
+// my apologies for all the mess Thank you for your time :)

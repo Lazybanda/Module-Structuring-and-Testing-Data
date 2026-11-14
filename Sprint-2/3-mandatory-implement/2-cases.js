@@ -14,3 +14,10 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+
+function toUpperCaseSnake(str) {
+  const replaceSpacing = str.replaceAll(" ", "_");
+  return replaceSpacing.toUpperCase();
+}
+
+console.log(toUpperCaseSnake("oussama Delleci BMI is 24.3 kkk"));
