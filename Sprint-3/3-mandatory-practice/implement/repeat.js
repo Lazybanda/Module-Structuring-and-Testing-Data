@@ -1,5 +1,3 @@
-function repeat() {
-    return "hellohellohello";
-}
+const repeat = (str, num) => str.repeat(num);
 
 module.exports = repeat;

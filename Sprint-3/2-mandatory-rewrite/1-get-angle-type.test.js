@@ -7,18 +7,22 @@ test("should identify right angle (90°)", () => {
 // REPLACE the comments with the tests
 // make your test descriptions as clear and readable as possible
 
-// Case 2: Identify Acute Angles:
-// When the angle is less than 90 degrees,
-// Then the function should return "Acute angle"
+const right = getAngleType(90);
+assertEquals(right, "Right angle");
+//console.log(right);
 
-// Case 3: Identify Obtuse Angles:
-// When the angle is greater than 90 degrees and less than 180 degrees,
-// Then the function should return "Obtuse angle"
+const acute = getAngleType(45);
+assertEquals(acute, "Acute angle");
+//console.log(acute);
 
-// Case 4: Identify Straight Angles:
-// When the angle is exactly 180 degrees,
-// Then the function should return "Straight angle"
+const obtuse = getAngleType(120);
+assertEquals(obtuse, "Obtuse Angle");
+//console.log(obtuse);
 
-// Case 5: Identify Reflex Angles:
-// When the angle is greater than 180 degrees and less than 360 degrees,
-// Then the function should return "Reflex angle"
+const straightAngle = getAngleType(180);
+assertEquals(straightAngle, "Straight Angle");
+//console.log(straightAngle);
+
+const reflexAngle = getAngleType(220);
+assertEquals(reflexAngle, "Reflex Angle");
+//console.log(reflexAngle);

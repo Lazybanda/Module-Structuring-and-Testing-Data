@@ -7,7 +7,7 @@ function find(str, char) {
     }
     index++;
   }
-  return -1;
+  return "Character not found";
 }
 
 console.log(find("code your future", "u"));
@@ -19,7 +19,7 @@ console.log(find("code your future", "z"));
 // Use the Python Visualiser to help you play computer with this example and observe how this code is executed
 // Pay particular attention to the following:
 
-// a) How the index variable updates during the call to find
-// b) What is the if statement used to check
-// c) Why is index++ being used?
-// d) What is the condition index < str.length used for?
+// a) How the index variable updates during the call to find?      it updates thanks to this line of code index++ it's also very important to be declared with the key word le in this case
+// b) What is the if statement used to check?                      to check the characters at every iteration of the loop
+// c) Why is index++ being used?                                   increment factor is a must to avoid infinite loops
+// d) What is the condition index < str.length used for?           this condition mark the length of the loop so in basic terms the loop will keep runing until the condition is met.
