@@ -8,21 +8,38 @@ test("should identify right angle (90°)", () => {
 // make your test descriptions as clear and readable as possible
 
 const right = getAngleType(90);
-assertEquals(right, "Right angle");
+
 //console.log(right);
 
 const acute = getAngleType(45);
-assertEquals(acute, "Acute angle");
+
 //console.log(acute);
+test("should identify acute angle (50°)", () => {
+  expect(getAngleType(50)).toEqual("Acute angle");
+});
+//
 
 const obtuse = getAngleType(120);
-assertEquals(obtuse, "Obtuse Angle");
+
 //console.log(obtuse);
+test("should identify obtuse angle (130°)", () => {
+  expect(getAngleType(130)).toEqual("Obtuse Angle");
+});
+
+//
 
 const straightAngle = getAngleType(180);
-assertEquals(straightAngle, "Straight Angle");
+
 //console.log(straightAngle);
+test("should identify straight angle (180°)", () => {
+  expect(getAngleType(180)).toEqual("Straight Angle");
+});
+
+//
 
 const reflexAngle = getAngleType(220);
-assertEquals(reflexAngle, "Reflex Angle");
+
 //console.log(reflexAngle);
+test("should identify reflex angle (230°)", () => {
+  expect(getAngleType(230)).toEqual("Reflex Angle");
+});

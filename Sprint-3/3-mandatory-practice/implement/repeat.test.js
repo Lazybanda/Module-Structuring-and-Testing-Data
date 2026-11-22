@@ -48,5 +48,5 @@ test("should repeat the string count times", () => {
   const str = "hello";
   const count = -1;
   const repeatedStr = repeat(str, count);
-  expect(repeatedStr).toEqual("Uncaught RangeError");
+  expect(repeatedStr).toEqual("Uncaught RangeError"); // this will throw an error
 });

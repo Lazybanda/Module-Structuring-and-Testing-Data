@@ -23,3 +23,12 @@ test("password has at least 5 characters", () => {
   // Assert
   expect(result).toEqual(false);
 });
+
+test("Password contain @", () => {
+  //Arange
+  const password = "Migra@2026";
+  //Act
+  const result = isValidPassword(password);
+  //Assert
+  expect(result).toEqual(false);
+});

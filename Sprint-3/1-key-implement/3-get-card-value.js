@@ -69,6 +69,6 @@ assertEquals(aceofHeart, 11);
 // Then it should throw an error indicating "Invalid card rank."
 
 const invalidCard = getCardValue("0♥");
-assertEquals(aceofHeart, "Invalid card rank.");
+assertEquals(invalidCard, "Invalid card rank.");
 
 //console.log(getCardValue("12♥"))
